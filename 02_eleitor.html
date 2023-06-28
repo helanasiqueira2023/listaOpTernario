@@ -1,14 +1,15 @@
 <meta charset="UTF-8">
 <script>
     //Problema: Eleitor
-    //Considerando que no Brasil é possível votar a partir dos 16 anos de idade, leia o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual. Ignore mês e dia de nascimento.
+    //Considerando que no Brasil é possível votar a partir dos 16 anos de idade, 
+    //leia o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual. Ignore mês e dia de nascimento.
 
     //Entrada
-
+const AnodeNascimento = parseInt(prompt(`Informe seu ano de nascimento:`).trim())
 
     //Processamento
-
+let mensagemFinal = (AnodeNascimento <= 2006) ? "Você já pode votar!" : (AnodeNascimento >= 2007) ? " Você não pode votar ainda!" : "Você é de menor";
 
     //Saída
-
+document.write(mensagemFinal);
 </script>
