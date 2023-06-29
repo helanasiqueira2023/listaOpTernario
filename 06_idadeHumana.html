@@ -8,11 +8,18 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+const idadeCao = Number(prompt(`Informe a idade do seu cão:`).trim());
+const porte = prompt(`Informe o porte do seu cachorro:`).trim();
 
     //Processamento
+let caesPortesmenores = fator * 5;
+let caesPortesmedio = fator * 6;
+let caesPortesGrande = fator * 7;
 
-    
+let mensagemFinal = (idadeCao = porte => caesPortesGrande) ? `Este cachorro tem ${caesPortesGrande} grande!`
+: (idadeCao = porte => caesPortesmedio) ? `Este cachorro tem ${caesPortesmedio} médio!` 
+: (idadeCao = porte => caesPortesmenores) ? `Este cachorro tem ${caesPortespequeno} porte pequeno!`
+
     //Saída
-
+document.write(mensagemFinal)
 </script>

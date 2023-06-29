@@ -8,11 +8,18 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+const PrecoProduto = parseFloat(prompt(`Informe o preço de um produto: `).trim().replace(",","."));
 
     //Processamento
+let vinte = 20 * 1.20;
+let quinze = 15 * 1.15;
+let dez = 10 * 1.10;
+let cinco = 5 * 1.5;
 
-    
+let mensagemFinal = (PrecoProduto <= 280 && vinte) ? `Este produto teve um aumento de ${vinte.toFixed(2)} %`
+: (PrecoProduto <= 700 && quinze) ? `Este produto teve aumento de ${quinze.toFixed(2)} %` 
+: (PrecoProduto <= 1500 && dez) ? `Este produto teve um aumento de ${dez.toFixed(2)} %` : (PrecoProduto > 1500 && cinco);
+
     //Saída
-
+document.write(mensagemFinal)
 </script>

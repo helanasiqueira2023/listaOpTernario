@@ -7,8 +7,8 @@
 const caractere = prompt(`Informe uma letra:`).trim().toLowerCase();
 
     //Processamento
-
+let mensagemFinal = (caractere == "a" || caractere == "e" || caractere == "i" || caractere == "o" || caractere == "u") ? `Este ${caractere} é uma vogal!` : `Este caractere não é uma vogal!`;
     
     //Saída
-
+document.write(mensagemFinal)
 </script>
